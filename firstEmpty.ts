@@ -4,7 +4,8 @@ import { canPlace, placeOnBoard, removeFromBoard } from './placeRemove'
 import { deepCopyBoard } from './tools'
 
 /**
- * Instead of trying every position for a piece, it finds the first empty cell and ony tries placements that cover the cell. This reduces branching and is standard exact-cover optimization.
+ * Instead of trying every position for a piece, it finds the first empty cell and only tries placements that cover the cell.
+ * This reduces branching and is standard exact-cover optimization.
  *
  * tracks: nodesVisited, placementsTried, maxDepth
  */
